@@ -1,0 +1,13 @@
+package OnlyPractice;
+
+public class HashMap {
+
+	public static void main(String[] args) {
+		
+		
+		Hashmap<String,Integer> hash = new HashMap<>();
+		
+		
+	}
+
+}

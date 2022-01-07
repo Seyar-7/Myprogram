@@ -1,0 +1,48 @@
+package OnlyPractice;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		ArrayList <Bank> bank = new  ArrayList<Bank>();
+		
+		Bank bank1 = new Bank("BankOfAmerica","Seyar",50000);
+		
+		bank.add(bank1);
+		bank.add(new Bank("BankOfAmerica","Morid",40000));
+		bank.add(new Bank("BankOfAmerica","Toryalai",60000));
+		
+		for(Bank i:bank) {
+			System.out.println(i);
+		}
+		
+		String select = scan.next();
+		int withdraw =0;
+		
+		if(select.equalsIgnoreCase("Seyar")) {
+			System.out.println("how much money you wanna transfer to?");
+			
+			withdraw = scan.nextInt();
+			
+			select = scan.next();
+			if(select.equalsIgnoreCase("Morid")) {
+				
+			 bank.get(0).setWithdraw(withdraw);
+			 bank.get(1).setDeposit(withdraw);
+				
+			}
+		}
+		System.out.println("------After_Transfer-----");
+		
+		for(Bank i:bank) {
+			System.out.println(i);
+		}
+	}
+
+}

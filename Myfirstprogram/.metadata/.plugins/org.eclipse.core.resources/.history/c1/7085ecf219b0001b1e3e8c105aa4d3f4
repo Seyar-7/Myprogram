@@ -1,0 +1,12 @@
+//befor we use GUI we need to import the file
+import javax.swing.JOptionPane;
+
+public class GUI_input_prac {
+	public static void main(String[] args) {
+		
+		String name = JOptionPane.showInputDialog("what is your name");
+		System.out.println(name);
+		
+		
+}
+}

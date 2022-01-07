@@ -1,0 +1,27 @@
+//befor we use GUI we need to import the file
+import javax.swing.JOptionPane;
+
+public class GUI_input_prac {
+	public static void main(String[] args) {
+		
+		String name = JOptionPane.showInputDialog("what is your name");
+		JOptionPane.showMessageDialog(null, "Hello "+name);
+		
+		//if we want change string to int we need to use "Integer.Parseint()' method
+		
+		int age = Integer.parseInt(JOptionPane.showInputDialog("how old are you "));
+		JOptionPane.showMessageDialog(null," You are "+age+" years old");
+		
+		double height = Double.parseDouble(JOptionPane.showInputDialog("Enter your height"));
+		JOptionPane.showMessageDialog(null,"You are "+height+" cm");
+		 
+		JOptionPane.showInputDialog("can you tell me your eldest brother name");
+		
+		String brother = JOptionPane.showInputDialog("what is your brother's name");
+		int age = Integer.parseInt(JOptionPane.showInputDialog("how old is he"));
+		double height= Double.parseDouble(JOptionPane.showInputDialog("enter his height"));
+		
+		JOptionPane.showMessageDialog(null, ("your brother's name is Baryalai he is 37 years old and he is 177 cm"));
+		
+}
+}

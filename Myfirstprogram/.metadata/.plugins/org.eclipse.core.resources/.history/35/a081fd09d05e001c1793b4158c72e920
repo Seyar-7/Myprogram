@@ -1,0 +1,5 @@
+package OnlyPractice;
+
+public interface SetAndGet {
+
+}

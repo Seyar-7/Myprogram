@@ -1,0 +1,37 @@
+package OnlyPractice;
+
+public class BankAccount implements SetAndGet{
+	
+	private String name;
+	private int balance;
+	
+	public BankAccount() {
+		this.name = "";
+		this.balance = 0;
+		
+	}
+	public BankAccount(String name,int balance) {
+		
+		this.name = name;
+		this.balance = balance;
+	}
+	@Override
+	public void setName(String name) {
+		this.name = name;	
+	}
+	@Override
+	public String getName() {
+		return name;
+	}
+	@Override
+	public void setBalance(int balance) {
+		this.balance = balance;	
+	}
+	@Override
+	public int getBalance() {
+		return balance;
+		
+		
+	}
+
+}

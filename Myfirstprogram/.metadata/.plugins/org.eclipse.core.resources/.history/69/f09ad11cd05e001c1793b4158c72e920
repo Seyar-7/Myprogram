@@ -1,0 +1,18 @@
+package OnlyPractice;
+
+public class Bank extends BankAccount{
+
+	String bankname;
+	
+	public Bank() {
+		super();
+		this.bankname ="";
+	}
+	public Bank(String bankname,String name,int balance) {
+		super(name,balance);
+		this.bankname = bankname;
+	}
+	public String Tostring() {
+		return "Name = "+this.getName()+", Balance = "+this.getBalance()+", BankName = "+this.bankname; 
+	}
+}

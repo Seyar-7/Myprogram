@@ -1,0 +1,26 @@
+
+public class Expression_prac {
+	public static void main(String[] args) {
+		
+		/*
+		 expression = operands & operators
+		 operands = values,variable,numbers,quantity
+		 operators = + - * / %	
+		 */
+		
+		int friends = 10;
+		
+		//friends = friends + 1;
+		//or
+		friends +=1;
+		System.out.println(friends);
+		
+		double mates = 20;
+		//mates = (double) mates + 1;
+		//or 
+		mates = mates+1;
+		System.out.println(mates);
+		
+		
+      }
+}

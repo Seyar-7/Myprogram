@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Math_class_prac {
+    public static void main(String[] args){
+    	
+    	double x;
+    	double y;
+    	double z;
+    	
+    	Scanner scan= new Scanner(System.in);
+    	
+    	System.out.println("enter side x:");
+        x=scan.nextDouble();
+    	System.out.println("enter side y:");
+        y=scan.nextDouble();
+    	
+    		}
+}

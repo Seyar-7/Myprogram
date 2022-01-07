@@ -1,0 +1,22 @@
+package OnlyPractice;
+
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		ArrayList <Bank> bank = new  ArrayList<Bank>();
+		
+		Bank bank1 = new Bank("BankOfAmerica","Seyar",50000);
+		
+		bank.add(bank1);
+		bank.add(new Bank("BankOfAmerica","Morid",40000));
+		bank.add(new Bank("BankOfAmerica","Toryalai",60000));
+		
+		for(Bank i:bank) {
+			System.out.println(i);
+		}
+	}
+
+}
